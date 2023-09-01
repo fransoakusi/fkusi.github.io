@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fk_portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="home">
+        <nav class="desktop-nav">
+          <div class="logo">
+            <a href="#home">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#about-me">About Me</a>
+            </li>
+            <li>
+              <a href="#work">My Work</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-nav">
+          <div class="logo">
+            <a href="#home">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+
+          <div class="menu-btn">
+            <img src="images/menu-icon.png" alt="" />
+          </div>
+        </nav>
+
+        <div class="mobile-menu-container">
+          <ul>
+            <li>
+              <a href="#about-me">About Me</a>
+            </li>
+            <li>
+              <a href="#work">My Work</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-container">
+          <div class="left">
+            <p class="i-am">
+              I'm a
+            </p>
+            <h2>
+            Developer,
+            </h2>
+            <h2>
+            Technical Writer
+            </h2>
+
+            <a href="#contact" class="btn">Contact</a>
+
+            <div class="social-icons">
+              <a href="https://twitter.com/Dev_Yaw?t=MIcQEybf-W5QhDQTf7GmiQ&s=09">
+                <img src="images/twitter-logo.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="images/dribbble-logo.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="images/instagram-logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="right">
+            <img src="images/hero-image.png" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <section id="about-me">
+        <h2>About Me</h2>
+        <div class="section-content">
+          <p>
+            I am Francis Kusi, an experienced IT specialist with a passion for solving complex
+            problems and delivering effective solutions. With two years in the industry, I have
+            developed a wide range of skills in App development and Computer Networking.
+          </p>
+          <p>
+           <b> My expertise includes:</b>
+            <ul> <li> App Development </li>
+            <li> Computer Networking</li>
+            <li> Technical Writter</li>
+            
+            </ul>
+          </p>
+          <p>
+            
+          </p>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2>My Work</h2>
+
+        <div class="section-content">
+          <div class="work-container">
+            <img src="images/project1.png" alt="" />
+            <img src="images/project2.png" alt="" />
+            <img src="images/project3.png" alt="" />
+            <img class="mobile-hide" src="images/project4.png" alt="" />
+            <img class="mobile-hide" src="images/project5.png" alt="" />
+            <img class="mobile-hide" src="images/project6.png" alt="" />
+          </div>
+          <a href="#" class="btn light">View All Projects</a>
+        </div>
+      </section>
+
+      <div id="testimonials"></div>
+
+      <section class="testimonials-section">
+        <img class="quote-icon" src="images/quote-icon.png" alt="" />
+        <p class="testimonial-text">
+          I have worked with Francis for about two years, when it comes to I.T solutions he is the best to deal with.
+        </p>
+
+        <div class="says">
+          <img src="images/testimonial1.png" alt="" />
+          <h3>Philip Mccoy</h3>
+          <p class="company-name">fck farmsltd</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="section-content">
+          <div class="email">
+            <img src="images/mail-icon.png" alt="" />
+            <div class="contact-text">fkusi686@gmailo.com</div>
+          </div>
+
+          <div class="phone">
+            <img src="images/phone-icon.png" alt="" />
+            <div class="contact-text">(+233) 542520089</div>
+          </div>
+
+          <div class="address">
+            <img src="images/address-logo.png" alt="" />
+            <div class="contact-text">
+              Kromoase PLT 50M BLK E Kumasi, Ghana        
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        This website was developed by Francis &copy; 2023
+      </footer>
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const mobileMenuContainer = document.querySelector(
+        ".mobile-menu-container"
+      );
+      const mobileMenuItems = document.querySelectorAll(
+        ".mobile-menu-container ul li a"
+      );
+
+      menuBtn.addEventListener("click", function () {
+        mobileMenuContainer.classList.toggle("active");
+      });
+
+      mobileMenuItems.forEach((i) => {
+        i.addEventListener("click", function () {
+          mobileMenuContainer.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
